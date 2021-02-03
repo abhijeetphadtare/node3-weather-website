@@ -9,7 +9,7 @@ const forecast = (latitude, longitude, callback) => {
         } else if (body.error) {
             callback('Unable to find location', undefined)
         } else {
-            callback(undefined, "Localtime :" + body.location.localtime +  body.current.weather_descriptions[0] +".  It is current " + body.current.temperature + " ℃ degress out. it feels like " + body.current.feelslike + "℃ degress out. " + " Windspeed :"+body.current.wind_speed +"Km/h  ," + "Humidity :" + body.current.humidity + "% ," + " Precipitaion :" + body.current.precip + "% ." + body.current.weather_icons )
+            callback(undefined, "Localtime :" + body.location.localtime +  body.current.weather_descriptions[0] +".  It is current " + body.current.temperature + " ℃ degress out. it feels like " + body.current.feelslike + "℃ degress out. " + " Windspeed :"+body.current.wind_speed +"Km/h  ," + "Humidity :" + body.current.humidity + "% ," + " Precipitaion :" + body.current.precip + "% ."  )
         }
     })
 }
